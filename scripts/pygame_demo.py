@@ -30,7 +30,7 @@ if str(REPO_ROOT) not in sys.path:
 try:
     import pygame
 except Exception as e:  # pragma: no cover
-    print("Error: pygame not installed. Install with: python3 -m pip install pygame")
+    print("Errore: pygame non installato. Installa con: python3 -m pip install pygame")
     raise
 
 from clash_royale_env import ClashRoyaleEnv
@@ -198,7 +198,7 @@ class PygameRenderer:
 
     def draw_hud(self, env: ClashRoyaleEnv, selected_card: Optional[int], selected_lane: int) -> None:
         # Elixir
-        self._blit_text(f"Elixir P:{env.elixir[0]}  E:{env.elixir[1]}  AI:{'ON' if not env.disable_enemy_ai else 'OFF'}",
+        self._blit_text(f"Elisir P:{env.elixir[0]}  E:{env.elixir[1]}  AI:{'ON' if not env.disable_enemy_ai else 'OFF'}",
                         (self.margin, self.height - 28), (220, 220, 180))
         # Cards list
         x = self.margin
@@ -259,7 +259,7 @@ def main() -> None:
     paused = False
     selected_card: Optional[int] = 0 if env.num_cards > 0 else None
     selected_lane = 0
-    queued_actions: 'List[Tuple[int, int, int]]' = []  # list of (card_id, lane, pos)
+    queued_actions: list[tuple[int,int,int]] = []  # list of (card_id, lane, pos)
     # Player deploy tiles from config (optional)
     deploy_tiles = getattr(env, 'deploy_player_tiles', None)
     selected_tile_idx = 0  # Ensure selected_tile_idx is always initialized

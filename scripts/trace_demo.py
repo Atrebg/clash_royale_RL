@@ -30,7 +30,7 @@ def scenario_giant_vs_tower() -> List[str]:
     env = ClashRoyaleEnv()
     random.seed(0)
     env.reset(seed=0)
-    # Disable enemy AI so elixir can still rise
+    # Disable enemy AI so elisir can still rise
     env.disable_enemy_ai = True
     env.spawn_by_name("Giant", lane_id=0, owner=0, pos=0)
     lines = ["=== Scenario: Giant vs Tower ==="]

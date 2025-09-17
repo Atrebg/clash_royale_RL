@@ -1,0 +1,48 @@
+=== Scenario: Giant vs Tower ===
+Turn 1: Elixir -> P:1 E:1
+Lane 0: Unit#0 Giant moved 0->1
+Turn 2: Elixir -> P:2 E:2
+Lane 0: Unit#0 Giant moved 1->2
+Turn 3: Elixir -> P:3 E:3
+Lane 0: Unit#0 Giant moved 2->3
+Turn 4: Elixir -> P:4 E:4
+Lane 0: Unit#0 Giant moved 3->4
+Turn 5: Elixir -> P:5 E:5
+Lane 0: Unit#0 Giant moved 4->5
+Lane 0: Unit#0 Giant reached ENEMY TOWER
+Lane 0: Unit#0 Giant hits ENEMY TOWER for 10
+Lane 0: ENEMY TOWER hits Unit#0 Giant for 8
+Turn 6: Elixir -> P:6 E:6
+Lane 0: Unit#0 Giant hits ENEMY TOWER for 10
+Lane 0: ENEMY TOWER hits Unit#0 Giant for 8
+=== Scenario: Cavaliere vs Sgherri ===
+Turn 1: Elixir -> P:1 E:1
+Lane 0: Unit#0 Cavaliere moved 1->2
+Lane 0: Unit#1 Sgherri moved 2->1
+Lane 0: Unit#1 Sgherri hits Unit#0 Cavaliere for 4 (dist 1)
+Turn 2: Elixir -> P:2 E:2
+Lane 0: Unit#1 Sgherri moved 1->0
+Lane 0: Unit#0 Cavaliere moved 2->3
+Lane 0: Unit#1 Sgherri reached PLAYER TOWER
+Lane 0: Unit#1 Sgherri hits PLAYER TOWER for 4
+Lane 0: PLAYER TOWER hits Unit#1 Sgherri for 8
+Lane 0: Unit#1 Sgherri died
+Turn 3: Elixir -> P:3 E:3
+Lane 0: Unit#0 Cavaliere moved 3->4
+Turn 4: Elixir -> P:4 E:4
+Lane 0: Unit#0 Cavaliere moved 4->5
+Lane 0: Unit#0 Cavaliere reached ENEMY TOWER
+Lane 0: Unit#0 Cavaliere hits ENEMY TOWER for 5
+Lane 0: ENEMY TOWER hits Unit#0 Cavaliere for 8
+Lane 0: Unit#0 Cavaliere died
+=== Scenario: Moschettiere (range) vs Sgherri (air) ===
+Turn 1: Elixir -> P:1 E:1
+Lane 0: Unit#0 Moschettiere moved 0->1
+Lane 0: Unit#1 Sgherri moved 3->2
+Lane 0: Unit#0 Moschettiere hits Unit#1 Sgherri for 7 (dist 1)
+Lane 0: Unit#1 Sgherri hits Unit#0 Moschettiere for 4 (dist 1)
+Lane 0: Unit#1 Sgherri died
+Turn 2: Elixir -> P:2 E:2
+Lane 0: Unit#0 Moschettiere moved 1->2
+Turn 3: Elixir -> P:3 E:3
+Lane 0: Unit#0 Moschettiere moved 2->3

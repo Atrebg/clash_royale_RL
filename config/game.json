@@ -1,0 +1,30 @@
+{
+  "game": {
+    "max_turns": 100,
+    "max_elixir": 10,
+    "starting_elixir": 0,
+    "base_hp": [100, 100],
+    "tower_hp": 100,
+    "tower_dmg": 2,
+    "side_tiles": 14,
+    "bridge_tiles": 1,
+    "tower_start": 4,
+    "tower_width": 3
+  },
+  "ai": {
+    "enemy_ai": true
+  },
+  "render": {
+    "width": 900,
+    "height": 500,
+    "fps": 60,
+    "step_ms": 1000,
+    "manual_step": true
+  },
+  "cards": [
+    { "name": "Cavaliere",   "cost": 1, "hp": 17, "dmg": 2,  "behavior": "nearest",    "range": 1, "is_air": false, "targets": ["ground"] },
+    { "name": "Giant",       "cost": 3, "hp": 30, "dmg": 10, "behavior": "tower_only", "range": 1, "is_air": false, "targets": ["ground"] },
+    { "name": "Moschettiere","cost": 4, "hp": 8,  "dmg": 4,  "behavior": "nearest",    "range": 3, "is_air": false, "targets": ["ground","air"] },
+    { "name": "Sgherri",     "cost": 2, "hp": 4,  "dmg": 2,  "behavior": "nearest",    "range": 1, "is_air": true,  "targets": ["ground","air"] }
+  ]
+}
